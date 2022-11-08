@@ -26,6 +26,7 @@ header {
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    
 }
 
 header h1 {
@@ -61,7 +62,7 @@ main {
     text-indent: 1cm;
     margin: auto;
     padding: 20px;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 800px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
     border-radius: 0px 0px 5px 5px;
@@ -99,4 +100,6 @@ footer {
     text-align: center;
     background-color:#07004D;
     padding: 5px;
+    min-width: 300px;
+    max-width: 800px;
 }
