@@ -94,6 +94,9 @@ main p {
 
 .img {
     width: 250px;
+    margin: auto;
+    display: block;
+    padding: 1px;
 }
 
 footer {
