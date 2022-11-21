@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (orientation:portrait)">
+    <link rel="stylesheet" href="estilo/paisagem.css" media="screen and (orientation:landscape)">
+    <title>login</title>
+</head>
+<body>
+    <section id="login">
+        <h1>Login</h1>
+        <form action="login.php" method="post" autocomplete="on" >
+            <section class="itens">
+                <label for="inome">Nome</label> <br>
+                <input type="text" name="nome" id="inome" min="3" max="13" required placeholder="Digite seu nome">
+            </section>
+            <section class="itens">
+                <label for="isobrenome">Sobrenome</label> <br>
+                <input type="text" name="sobrenome" id="isobrenome" min="5" max="20" required placeholder="Digite seu sobrenome">
+            </section>
+            <section class="itens">
+                <label for="iemail">Email</label> <br>
+                <input type="email" name="email" id="iemail" required placeholder="Digite seu E-mail">
+            </section>
+            <section class="itens">
+                <label for="isenha">Senha</label> <br>
+                <input type="password" name="senha" id="isenha" required placeholder="Digite seu senha">
+            </section>
+            <section class="botão">
+                <input class="enviar" type="submit" value="Enviar">
+                <input class="limpar" type="reset" value="Limpar">
+            </section>
+        </form>
+    </section>
+</body>
+</html>
