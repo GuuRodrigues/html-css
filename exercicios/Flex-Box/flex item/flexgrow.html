@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-grow</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        body {
+            font-family: monospace;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid #ccc;
+        }
+
+        .item {
+            margin: 5px;
+            background: tomato;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .grow0 {
+            flex-grow: 0;
+        }
+
+        .grow1 {
+            flex-grow: 1;
+        }
+
+        .grow2 {
+            flex-grow: 2; /*Não muda nada*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-grow: 0;</h1>
+    <section class="container">
+        <div class="item grow0">1</div>
+        <div class="item grow0">2</div>
+        <div class="item grow0">3</div>
+    </section>
+
+    <h1>Flex-grow: 1;</h1>
+    <section class="container">
+        <div class="item grow1">1</div>
+        <div class="item grow1">2</div>
+        <div class="item grow1">3</div>
+    </section>
+
+    <h1>Flex-grow: 2;</h1>
+    <section class="container">
+        <div class="item grow2">1</div>
+        <div class="item grow2">2</div>
+        <div class="item grow2">3</div>
+    </section>
+
+    <h1>Flex-grow: 1; // conteudo largo</h1>
+    <section class="container">
+        <div class="item grow2">1</div>
+        <div class="item grow2">TestandoTestando2</div>
+        <div class="item grow2">3</div>
+    </section>
+
+    <h1>Flex-grow: (misturado)</h1>
+    <section class="container">
+        <div class="item grow0">1</div>
+        <div class="item grow1">2</div>
+        <div class="item grow2">3</div>
+    </section>
+</body>
+</html>
