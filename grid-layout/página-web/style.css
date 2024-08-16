@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik+Iso&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 45% 55%;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+}
+.grid .label-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #098171;
+}
+.grid .label-start h1 {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.grid .label-start i {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.grid .form {
+  width: 100%;
+  height: 100%;
+  grid-row: 2;
+}
+.grid .form .title {
+  display: none;
+}
+.grid .form .form-group {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid .form .form-group input {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #F8F7EE;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.grid .form .form-group input:active {
+  border: 2px solid #098171;
+}
+.grid .form .form-group input:focus {
+  border: 2px solid #098171;
+}
+.grid .form .form-group button {
+  width: 140px;
+  height: 40px;
+  background-color: #098171;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+.grid .form .form-group button:hover {
+  background-color: #056659;
+}
+.grid .form .form-group button:active {
+  background-color: #056659;
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 97%;
+    height: 100%;
+  }
+  .grid .label-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #098171;
+  }
+  .grid .label-start h1 {
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .grid .label-start i {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  .grid .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .grid .form .title {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #ff9306;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 700;
+  }
+  .grid .form .form-group {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .grid .form .form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F8F7EE;
+    border: none;
+    outline: none;
+    font-weight: 300;
+  }
+  .grid .form .form-group button {
+    width: 140px;
+    height: 40px;
+    background-color: #098171;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

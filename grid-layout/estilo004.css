@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    /*grid-template-rows: repeat(2, 50px);*/
+    grid-auto-columns: 200px;
+    grid-auto-rows: 50px;
+    background-color: brown;
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    background-color: tomato;
+}
+
+.item-column-2 {
+    grid-column: 1/6;
+}

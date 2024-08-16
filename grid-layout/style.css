@@ -1,0 +1,40 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: khaki;
+    width: 98vw;
+    height: 98vh;
+}
+
+.grid {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    grid-gap: 10px;
+    background-color: lightcoral;
+    width: 400px;
+    height: 400px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: blue;
+}
