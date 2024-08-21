@@ -1,0 +1,16 @@
+.container {
+    background-color: lightsalmon;
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item  {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    
+    flex: auto;
+}
