@@ -1,0 +1,31 @@
+.container {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item  {
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 100px;
+
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#a {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#b {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#c {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
